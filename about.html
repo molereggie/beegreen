@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Us | Bee Green Natural Bee Removal | (877) 675-6102</title>
+<meta name="description" content="Bee Green is a team of beekeepers and builders who remove and relocate live bee colonies — never exterminate — across California & Tennessee. Licensed, insured, 24/7. (877) 675-6102"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:    #1a6b35;
+  --green-d:  #0f4521;
+  --green-l:  #eaf5ee;
+  --amber:    #f5a11c;
+  --amber-d:  #d4880e;
+  --white:    #ffffff;
+  --off:      #f5f8f6;
+  --ink:      #1a2b1f;
+  --gray:     #5a6872;
+  --border:   #dde8e0;
+  --shadow:   0 2px 12px rgba(0,0,0,.08);
+  --shadow-md:0 6px 28px rgba(0,0,0,.12);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:16px}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+
+/* ─── UTILITY ─── */
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
+.section--gray{background:var(--off)}
+.section--dark{background:var(--green-d);color:#fff}
+
+.eyebrow{
+  display:inline-block;
+  font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--green);margin-bottom:10px;
+}
+.eyebrow--white{color:rgba(255,255,255,.7)}
+.eyebrow--amber{color:var(--amber)}
+
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.2}
+.section-title{
+  font-size:clamp(1.75rem,3vw,2.4rem);
+  font-weight:700;color:var(--ink);margin-bottom:12px;
+}
+.section-title--white{color:#fff}
+.section-sub{
+  font-size:1.0rem;color:var(--gray);max-width:600px;margin-bottom:44px;
+}
+.section-sub--white{color:rgba(255,255,255,.72)}
+.center{text-align:center}
+.center .section-sub{margin-left:auto;margin-right:auto}
+
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Poppins',sans-serif;font-size:.875rem;font-weight:600;
+  letter-spacing:.03em;padding:14px 28px;border-radius:6px;
+  cursor:pointer;border:2px solid transparent;transition:all .2s;
+  text-decoration:none;
+  min-width:0;       /* allow flex buttons to shrink/wrap instead of forcing page width */
+}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-d);transform:translateY(-1px);box-shadow:0 4px 20px rgba(15,69,33,.3)}
+.btn-amber{background:var(--amber);color:#fff}
+.btn-amber:hover{background:var(--amber-d);transform:translateY(-1px);box-shadow:0 4px 20px rgba(212,136,14,.3)}
+.btn-white{background:#fff;color:var(--green)}
+.btn-white:hover{background:#f0f8f3}
+.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-outline:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn-lg{padding:17px 36px;font-size:1rem}
+
+/* ─── TOP BAR ─── */
+.topbar{
+  background:var(--green-d);padding:8px 0;
+  font-size:.8rem;color:rgba(255,255,255,.8);
+}
+.topbar-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:8px;
+}
+.topbar-left{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.topbar-item{display:flex;align-items:center;gap:6px}
+.topbar-right a{
+  color:rgba(255,255,255,.85);font-weight:600;
+  display:flex;align-items:center;gap:6px;
+}
+.topbar-right a:hover{color:#fff}
+
+/* ─── NAV ─── */
+nav{
+  background:#fff;
+  box-shadow:0 1px 0 var(--border);
+  position:sticky;top:0;z-index:200;
+}
+.nav-inner{
+  display:flex;align-items:center;
+  height:80px;gap:20px;
+}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo img{height:54px;width:auto;object-fit:contain}
+.nav-logo-fallback{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{
+  width:44px;height:44px;background:var(--green);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.nav-logo-text strong{display:block;font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;color:var(--green-d)}
+.nav-logo-text span{font-size:.72rem;color:var(--gray);letter-spacing:.04em}
+
+.nav-links{display:flex;align-items:center;gap:4px;list-style:none}
+.nav-links a{
+  font-size:.875rem;font-weight:600;color:var(--ink);white-space:nowrap;
+  padding:8px 12px;border-radius:6px;transition:all .2s;
+}
+.nav-links a:hover{color:var(--green);background:var(--green-l)}
+.nav-links a.active{color:var(--green);background:var(--green-l)}
+
+.nav-end{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0}
+.nav-ctas{display:flex;align-items:center;gap:10px}
+.nav-phone{
+  font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;white-space:nowrap;
+  color:var(--green-d);display:flex;align-items:center;gap:8px;
+}
+.nav-phone svg{color:var(--amber)}
+
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-burger span{display:block;width:24px;height:2px;background:var(--ink);border-radius:2px}
+
+/* mobile menu */
+.mobile-drawer{
+  display:none;flex-direction:column;
+  position:fixed;left:0;right:0;bottom:0;top:80px;
+  background:#fff;z-index:198;
+  padding:8px 24px 40px;overflow-y:auto;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);
+}
+body.dark .mobile-drawer{background:#0d1a10}
+.mobile-drawer.open{display:flex}
+.mobile-drawer a{
+  font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:600;
+  color:var(--ink);padding:15px 0;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+}
+body.dark .mobile-drawer a{color:#ddeee2;border-color:#1e3022}
+.mobile-drawer a:hover{color:var(--green)}
+.nav-burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.is-open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-burger span{transition:transform .25s ease,opacity .2s,background .2s}
+.mobile-phone{
+  margin-top:20px;padding:16px 20px;background:var(--green) !important;border-radius:8px;
+  color:#fff !important;font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;
+  display:flex !important;align-items:center !important;justify-content:center !important;gap:10px;
+  border-bottom:none !important;
+}
+
+/* ─── PAGE HERO ─── */
+.page-hero{position:relative;background:var(--green-d);color:#fff;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.22}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,69,33,.85) 0%,rgba(15,69,33,.55) 100%)}
+.page-hero .wrap{position:relative;z-index:2;padding:74px 0}
+.breadcrumb{font-size:.8rem;color:rgba(255,255,255,.6);margin-bottom:16px;font-weight:600}
+.breadcrumb a{color:rgba(255,255,255,.6)}
+.breadcrumb a:hover{color:#fff}
+.breadcrumb span{color:var(--amber)}
+.page-hero h1{font-size:clamp(2rem,4.4vw,3rem);font-weight:800;color:#fff;margin-bottom:16px;line-height:1.12}
+.page-hero h1 em{font-style:normal;color:var(--amber)}
+.page-hero p{max-width:640px;color:rgba(255,255,255,.82);font-size:1.08rem;line-height:1.7;margin-bottom:28px}
+.page-hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ─── STORY ─── */
+#story{background:#fff}
+.story-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.story-img{position:relative;border-radius:12px;overflow:hidden}
+.story-img img{width:100%;height:460px;object-fit:cover;display:block}
+.story-img-badge{
+  position:absolute;bottom:20px;left:20px;background:var(--amber);color:#fff;
+  padding:14px 18px;border-radius:10px;font-family:'Poppins',sans-serif;
+}
+.story-img-badge strong{display:block;font-size:1.5rem;font-weight:800;line-height:1}
+.story-img-badge span{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.story-text .lead{font-size:1.15rem;color:var(--ink);font-weight:600;margin-bottom:18px;line-height:1.6}
+.story-text p{color:var(--gray);line-height:1.8;margin-bottom:16px}
+.story-text p:last-child{margin-bottom:0}
+
+/* ─── STATS + CERTS ─── */
+#about-stats{background:var(--green-d);color:#fff}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:48px}
+.stat{text-align:center;padding:0 12px}
+.stat-num{font-family:'Poppins',sans-serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;color:var(--amber);line-height:1;margin-bottom:8px}
+.stat-label{font-size:.9rem;color:rgba(255,255,255,.75);line-height:1.5}
+.cert-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12)}
+.cert{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  padding:10px 18px;border-radius:8px;font-size:.85rem;font-weight:600;
+}
+.cert svg{color:var(--amber);flex-shrink:0}
+
+/* ─── VALUES ─── */
+#values{background:var(--off)}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.value-card{
+  background:#fff;border:1px solid var(--border);border-radius:10px;
+  padding:32px 28px;box-shadow:var(--shadow);
+  transition:box-shadow .2s,transform .28s;
+}
+.value-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.value-icon{
+  width:56px;height:56px;border-radius:12px;background:var(--green-l);
+  display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+}
+.value-icon svg{color:var(--green);width:26px;height:26px}
+.value-card h4{font-size:1.05rem;font-weight:700;margin-bottom:8px;color:var(--ink)}
+.value-card p{font-size:.9rem;color:var(--gray);line-height:1.7}
+
+/* ─── TEAM ─── */
+#team{background:#fff}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.team-card{
+  background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden;
+  box-shadow:var(--shadow);transition:box-shadow .28s,transform .28s;
+}
+.team-card:hover{box-shadow:var(--shadow-md);transform:translateY(-5px)}
+.team-img{height:240px;overflow:hidden;background:var(--green-l)}
+.team-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.team-card:hover .team-img img{transform:scale(1.06)}
+.team-body{padding:20px 22px 24px}
+.team-tag{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;display:block}
+.team-role{font-family:'Poppins',sans-serif;font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:8px}
+.team-body p{font-size:.86rem;color:var(--gray);line-height:1.65}
+
+/* ─── FOOTER ─── */
+footer{background:var(--ink);color:rgba(255,255,255,.65)}
+.footer-top{
+  display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;
+  gap:48px;padding:64px 0 48px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-logo-img{height:48px;width:auto;object-fit:contain;margin-bottom:16px;filter:brightness(0) invert(1)}
+.footer-desc{font-size:.875rem;line-height:1.75;margin-bottom:20px}
+.footer-socials{display:flex;gap:10px}
+.fsocial{
+  width:34px;height:34px;background:rgba(255,255,255,.08);
+  border-radius:6px;display:flex;align-items:center;justify-content:center;transition:background .2s;
+}
+.fsocial:hover{background:var(--green)}
+.footer-col h5{
+  font-family:'Poppins',sans-serif;
+  font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.35);margin-bottom:18px;
+}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul a{font-size:.875rem;color:rgba(255,255,255,.55);transition:color .2s;overflow-wrap:anywhere}
+.footer-col ul a:hover{color:#fff}
+.footer-bot{
+  padding:28px 0;display:flex;
+  justify-content:space-between;align-items:center;
+  font-size:.78rem;flex-wrap:wrap;gap:12px;
+}
+.footer-bot a{color:rgba(255,255,255,.4)}
+.footer-bot a:hover{color:#fff}
+
+/* ─── FLOAT BTN ─── */
+.float-btn{
+  position:fixed;bottom:24px;right:24px;z-index:999;
+  display:flex;align-items:center;gap:10px;
+  background:var(--green);color:#fff;
+  padding:14px 22px;border-radius:999px;
+  font-family:'Poppins',sans-serif;font-size:.875rem;font-weight:700;
+  box-shadow:0 6px 28px rgba(15,69,33,.4);
+  transition:transform .2s,box-shadow .2s;
+}
+.float-btn:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(15,69,33,.5)}
+.float-dot{width:10px;height:10px;border-radius:50%;background:#4ade80;flex-shrink:0;position:relative}
+.float-dot::after{
+  content:'';position:absolute;inset:-4px;border-radius:50%;
+  border:2px solid #4ade80;animation:fp 1.6s ease infinite;
+}
+@keyframes fp{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(2.2)}}
+
+/* ─── CONTACT FORM ─── */
+.f-g{margin-bottom:14px}
+.f-label{display:block;font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
+.f-input{
+  width:100%;padding:12px 14px;
+  border:1.5px solid var(--border);border-radius:6px;
+  font-size:.925rem;font-family:'Open Sans',sans-serif;
+  color:var(--ink);background:#fff;outline:none;
+  transition:border-color .2s;
+}
+.f-input:focus{border-color:var(--green)}
+textarea.f-input{resize:vertical;min-height:80px}
+/* form sits on a white card even in dark mode — keep its text dark */
+body.dark .f-input{color:#1a2b1f}
+/* keep long contact details (the email is one unbreakable token) from
+   forcing horizontal overflow on small screens */
+#contact-us *{min-width:0}
+#contact-us a{overflow-wrap:anywhere}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1040px){
+  .values-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-grid{grid-template-columns:repeat(2,1fr);gap:32px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:1120px){
+  .page-hero .wrap{padding:60px 44px}
+}
+@media(max-width:1200px){
+  .topbar{display:none}
+  .nav-links,.nav-ctas{display:none}
+  .nav-end{gap:6px}
+  .nav-burger{display:flex}
+  .story-split{grid-template-columns:1fr;gap:36px}
+  .story-img{order:-1}
+  .footer-top{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:700px){
+  .values-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+}
+@media(max-width:900px){
+  #contact-us>div>div[style]{grid-template-columns:1fr!important}
+}
+@media(max-width:600px){
+  .page-hero .wrap{padding:48px 28px}
+  .f-row{grid-template-columns:1fr!important}
+}
+@media(max-width:460px){
+  .stat-grid{grid-template-columns:1fr;gap:28px}
+}
+
+/* ─── REVEAL ANIM ─── */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}
+.rv-d2{transition-delay:.16s}
+.rv-d3{transition-delay:.24s}
+
+/* ─── DARK MODE ─── */
+body.dark{
+  --ink:    #ddeee2;
+  --gray:   #8aaa90;
+  --border: #2a3d2e;
+  --off:    #141f17;
+  background:#0d1a10;
+}
+body.dark nav{background:#0d1a10;box-shadow:0 1px 0 #1e3022}
+body.dark .nav-logo{background:#fff;border-radius:8px;padding:5px 10px;margin-left:-10px}
+body.dark .section-title{color:#ddeee2}
+body.dark .nav-links a{color:#ddeee2}
+body.dark .nav-links a:hover,body.dark .nav-links a.active{color:#4ade80;background:#1e3022}
+body.dark .nav-phone{color:#c8e6cc}
+body.dark #story{background:#0d1a10}
+body.dark #values{background:#111d14}
+body.dark #team{background:#0d1a10}
+body.dark .value-card,body.dark .team-card{background:#111d14;border-color:#1e3022}
+body.dark .value-card h4,body.dark .team-role{color:#ddeee2}
+body.dark #contact-us .contact-form-white{background:#111d14}
+body.dark footer{background:#071209;color:rgba(255,255,255,.65)}
+body.dark .footer-top{border-color:rgba(255,255,255,.08)}
+body.dark .footer-col h5{color:rgba(255,255,255,.35)}
+body.dark .footer-col ul a{color:rgba(255,255,255,.55)}
+body.dark .footer-bot{color:rgba(255,255,255,.4)}
+body.dark .footer-bot a{color:rgba(255,255,255,.35)}
+
+/* dark mode toggle */
+.dark-toggle{
+  width:36px;height:36px;border-radius:8px;
+  background:var(--green-l);border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s;flex-shrink:0;
+}
+body.dark .dark-toggle{background:#1e3022}
+.dark-toggle svg{width:18px;height:18px;color:var(--green)}
+body.dark .dark-toggle svg{color:#4ade80}
+.dark-toggle .icon-moon{display:block}
+.dark-toggle .icon-sun{display:none}
+body.dark .dark-toggle .icon-moon{display:none}
+body.dark .dark-toggle .icon-sun{display:block}
+
+/* ─── FLYING BEE 🐝 ─── */
+.flying-bee{
+  position:fixed;left:0;top:0;z-index:990;
+  width:46px;height:34px;pointer-events:none;
+  animation:beePath 30s ease-in-out infinite;
+  will-change:transform;
+}
+.bee-inner{width:100%;height:100%;animation:beeBob 1.1s ease-in-out infinite}
+.bee-wings .wing{transform-box:fill-box;transform-origin:50% 90%;animation:beeFlap .12s ease-in-out infinite}
+@keyframes beeBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes beeFlap{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.45)}}
+@keyframes beePath{
+  0%   {transform:translate(-12vw,32vh) rotate(6deg)}
+  12%  {transform:translate(18vw,12vh) rotate(-7deg)}
+  25%  {transform:translate(52vw,26vh) rotate(5deg)}
+  38%  {transform:translate(84vw,9vh)  rotate(-9deg)}
+  50%  {transform:translate(72vw,46vh) rotate(6deg)  scaleX(-1)}
+  62%  {transform:translate(34vw,62vh) rotate(-5deg) scaleX(-1)}
+  75%  {transform:translate(8vw,46vh)  rotate(7deg)  scaleX(-1)}
+  88%  {transform:translate(42vw,28vh) rotate(-6deg)}
+  100% {transform:translate(-12vw,32vh) rotate(6deg)}
+}
+@media(prefers-reduced-motion:reduce){.flying-bee{display:none}}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Available 24/7 — Emergency Response
+      </span>
+      <span class="topbar-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Fully Permitted & Insured — CA & TN
+      </span>
+      <span class="topbar-item">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Free Written Estimates — No Obligation
+      </span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:info@BeeGreenRemoval.com">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@BeeGreenRemoval.com
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://beegreenremoval.com/images/newsitelogo.png"
+           alt="Bee Green Natural Bee Removal"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="nav-logo-fallback" style="display:none">
+        <div class="nav-logo-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6 2 4 7 4 10c0 4 2 6 4 7.5V21h8v-3.5C18 16 20 14 20 10c0-3-2-8-8-8z"/>
+            <line x1="8" y1="14" x2="16" y2="14"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <strong>Bee Green</strong>
+          <span>Natural Bee Removal</span>
+        </div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-end">
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <div class="nav-ctas">
+        <a href="tel:8776756102" class="nav-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.22 2.84 2 2 0 012.22.86h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.03z"/></svg>
+          (877) 675-6102
+        </a>
+        <a href="#contact-us" class="btn btn-amber">Free Estimate</a>
+      </div>
+      <button class="nav-burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="index.html" onclick="closeMob()">Home <span>→</span></a>
+  <a href="services.html" onclick="closeMob()">Services <span>→</span></a>
+  <a href="about.html" onclick="closeMob()">About <span>→</span></a>
+  <a href="portfolio.html" onclick="closeMob()">Portfolio <span>→</span></a>
+  <a href="reviews.html" onclick="closeMob()">Reviews <span>→</span></a>  <a href="contact.html" onclick="closeMob()">Contact <span>→</span></a>
+  <a href="tel:8776756102" class="mobile-phone" onclick="closeMob()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.22 2.84 2 2 0 012.22.86h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.03z"/></svg>
+    Call (877) 675-6102
+  </a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/gallery/g8.png')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <span>About</span></div>
+    <h1>Humane Bee Removal,<br><em>Done by People Who Love Bees</em></h1>
+    <p>We are 1st committed to God who created this Earth &amp; everything in it. With years of hands-on experience, we humanely remove and relocate live bees from homes and businesses across California and Tennessee.</p>
+    <div class="page-hero-actions">
+      <a href="#contact-us" class="btn btn-amber btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Get a Free Estimate
+      </a>
+      <a href="tel:8776756102" class="btn btn-outline btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.22 2.84 2 2 0 012.22.86h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.03z"/></svg>
+        Call (877) 675-6102
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="section">
+  <div class="wrap">
+    <div class="story-split">
+      <div class="story-text rv">
+        <div class="eyebrow">Our Story</div>
+        <h2 class="section-title">Beekeepers First, Bee Removers Second</h2>
+        <p class="lead">Bee Green Natural Bee Removal was founded on one simple belief: bees are far too important to kill.</p>
+        <p>What began as a couple of beekeepers helping neighbors with backyard swarms has grown into a full live-removal service across California and Tennessee. Every colony we pull out of a wall, tree, or roof is handed off to a local beekeeper partner — never exterminated.</p>
+        <p>Our technicians pair real beekeeping knowledge with hands-on construction experience, so we can open up a structure, remove every bit of comb, and seal it back up properly. The bees get a healthy second home, and your property is protected from the rot, stains, and pests an abandoned hive leaves behind.</p>
+        <p>We answer the phone 24/7, give free written estimates, and back our work with a warranty — because doing right by the bees and by our customers is the entire point.</p>
+      </div>
+      <div class="story-img rv rv-d1">
+        <img src="images/gallery/g1.png" alt="Bee Green technician with a safely relocated colony" loading="lazy"/>
+        <div class="story-img-badge">
+          <strong>100%</strong>
+          <span>Live Relocation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS + CERTS -->
+<section id="about-stats" class="section">
+  <div class="wrap">
+    <div class="center rv">
+      <div class="eyebrow eyebrow--amber">By The Numbers</div>
+      <h2 class="section-title section-title--white">Trusted Across Two States</h2>
+      <p class="section-sub section-sub--white">A track record built one humane removal at a time.</p>
+    </div>
+    <div class="stat-grid rv">
+      <div class="stat"><div class="stat-num">5.0★</div><div class="stat-label">Average Yelp Rating</div></div>
+      <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Five-Star Reviews</div></div>
+      <div class="stat"><div class="stat-num">3+ yrs</div><div class="stat-label">Min. Technician Experience</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Live Relocation — Never Exterminate</div></div>
+    </div>
+    <div class="cert-strip rv rv-d1">
+      <span class="cert"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Fully Permitted</span>
+      <span class="cert"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</span>
+      <span class="cert"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Serving CA &amp; TN</span>
+      <span class="cert"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Written Warranty</span>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="values" class="section">
+  <div class="wrap">
+    <div class="center rv">
+      <div class="eyebrow">What We Stand For</div>
+      <h2 class="section-title">Our Core Values</h2>
+      <p class="section-sub">The principles behind every job — from a single swarm to a colony deep inside your walls.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card rv">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <h4>Protect Pollinators</h4>
+        <p>We relocate every honey-bee colony to a local beekeeper partner. We never exterminate the bees.</p>
+      </div>
+      <div class="value-card rv rv-d1">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h4>Honest Pricing</h4>
+        <p>Free written estimates, a clear scope of work, and never any hidden fees or surprise charges.</p>
+      </div>
+      <div class="value-card rv rv-d2">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h4>Always Available</h4>
+        <p>Real 24/7 emergency response, seven days a week. Swarms don't wait — and neither do we.</p>
+      </div>
+      <div class="value-card rv">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <h4>Complete Work</h4>
+        <p>We remove all honeycomb and seal entry points, then stand behind it with a written warranty.</p>
+      </div>
+      <div class="value-card rv rv-d1">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <h4>Licensed &amp; Insured</h4>
+        <p>Fully permitted, bonded, and insured to operate in both California and Tennessee.</p>
+      </div>
+      <div class="value-card rv rv-d2">
+        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h4>Community First</h4>
+        <p>Discounts for seniors, military, and first responders — our small way of giving back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section">
+  <div class="wrap">
+    <div class="center rv">
+      <div class="eyebrow">Our Team</div>
+      <h2 class="section-title">The People Behind Every Rescue</h2>
+      <p class="section-sub">Trained beekeepers and removal technicians who treat every colony — and every customer — with care.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card rv">
+        <div class="team-img"><img src="images/gallery/g3.png" alt="Master beekeeper holding a honeycomb frame" loading="lazy"/></div>
+        <div class="team-body">
+          <span class="team-tag">Bee Green Team</span>
+          <div class="team-role">Master Beekeeper</div>
+          <p>Leads our relocations and rehomes every rescued colony with our local apiary partners.</p>
+        </div>
+      </div>
+      <div class="team-card rv rv-d1">
+        <div class="team-img"><img src="images/gallery/g4.png" alt="Removal technician with a vacuum capture box" loading="lazy"/></div>
+        <div class="team-body">
+          <span class="team-tag">Bee Green Team</span>
+          <div class="team-role">Removal Technician</div>
+          <p>Handles swarm captures and structural extractions with full protective gear and a steady hand.</p>
+        </div>
+      </div>
+      <div class="team-card rv rv-d2">
+        <div class="team-img"><img src="images/gallery/g2.png" alt="Relocation specialist with a screened bee frame" loading="lazy"/></div>
+        <div class="team-body">
+          <span class="team-tag">Bee Green Team</span>
+          <div class="team-role">Relocation Specialist</div>
+          <p>Transfers live bees safely from the capture box into a permanent, healthy new hive.</p>
+        </div>
+      </div>
+      <div class="team-card rv rv-d3">
+        <div class="team-img"><img src="images/gallery/g7.png" alt="Field technician in front of a large wall colony" loading="lazy"/></div>
+        <div class="team-body">
+          <span class="team-tag">Bee Green Team</span>
+          <div class="team-role">Field Technician</div>
+          <p>Inspects properties, locates hidden colonies, and bee-proofs entry points so bees can't return.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact-us" class="section section--green" style="background:var(--green);color:#fff">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start" class="rv">
+      <div>
+        <div class="eyebrow eyebrow--amber">Get in Touch</div>
+        <h2 class="section-title section-title--white" style="margin-bottom:16px">Request Your<br>Free Estimate</h2>
+        <p class="section-sub section-sub--white" style="margin-bottom:40px">Fill out the form and we'll call you within the hour. Or skip the form and call us directly — we're always available.</p>
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div style="display:flex;align-items:center;gap:14px;color:#fff">
+            <div style="width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.22 2.84 2 2 0 012.22.86h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.03z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:2px">Phone</div>
+              <a href="tel:8776756102" style="color:#fff;font-weight:700;font-size:1.15rem">(877) 675-6102</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;color:#fff">
+            <div style="width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:2px">Email</div>
+              <a href="mailto:info@BeeGreenRemoval.com" style="color:#fff;font-weight:600">info@BeeGreenRemoval.com</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;color:#fff">
+            <div style="width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.55);margin-bottom:2px">Hours</div>
+              <span style="font-weight:600">24 Hours · 7 Days a Week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-white" style="background:#fff;border-radius:12px;padding:40px;box-shadow:0 20px 60px rgba(0,0,0,.2)">
+        <h3 style="font-size:1.25rem;font-weight:700;color:#1a2b1f;margin-bottom:24px">Tell Us About Your Bee Problem</h3>
+        <form onsubmit="handleForm(event)">
+          <div class="f-row" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div class="f-g">
+              <label class="f-label" for="c-fn">First Name</label>
+              <input class="f-input" type="text" id="c-fn" placeholder="Jane" required/>
+            </div>
+            <div class="f-g">
+              <label class="f-label" for="c-ln">Last Name</label>
+              <input class="f-input" type="text" id="c-ln" placeholder="Smith" required/>
+            </div>
+          </div>
+          <div class="f-g">
+            <label class="f-label" for="c-ph">Phone Number</label>
+            <input class="f-input" type="tel" id="c-ph" placeholder="(555) 000-0000" required/>
+          </div>
+          <div class="f-g">
+            <label class="f-label" for="c-em">Email Address</label>
+            <input class="f-input" type="email" id="c-em" placeholder="jane@email.com" required/>
+          </div>
+          <div class="f-g">
+            <label class="f-label" for="c-sv">Type of Issue</label>
+            <select class="f-input" id="c-sv">
+              <option value="">Select service...</option>
+              <option>Live Bee Swarm</option>
+              <option>Beehive in Structure (Wall, Attic, Roof)</option>
+              <option>Underground Yellow Jacket Nest</option>
+              <option>Wasp Nest</option>
+              <option>Mud Dauber Nest</option>
+              <option>Bee-Proofing</option>
+              <option>Not Sure — Need Inspection</option>
+            </select>
+          </div>
+          <div class="f-g">
+            <label class="f-label" for="c-msg">Describe the Problem</label>
+            <textarea class="f-input" id="c-msg" rows="3" placeholder="Where are the bees? How long have they been there?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-amber btn-lg" style="width:100%;justify-content:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send My Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <img src="https://beegreenremoval.com/images/newsitelogo.png" class="footer-logo-img" alt="Bee Green Natural Bee Removal"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+        <div style="display:none;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:4px">Bee Green</div>
+        <p class="footer-desc">Humane, eco-friendly bee removal and relocation across California and Tennessee. We protect pollinators — and your property.</p>
+        <div class="footer-socials">
+          <a href="https://facebook.com/beegreenremoval" class="fsocial" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,.65)" stroke="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com/beegreenremoval" class="fsocial" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,.65)"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1a2b1f"/></svg>
+          </a>
+          <a href="https://www.instagram.com/beegreenbeeremoval/" class="fsocial" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/bee-green-natural-bee-removal-los-angeles" class="fsocial" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,.65)"><path d="M12.4 2.7c-.3-.9-1.6-.9-2 0L8.6 7.4l-5-1.2c-.9-.2-1.5.8-.9 1.5l3.3 3.8-3.3 3.8c-.6.7 0 1.7.9 1.5l5-1.2 1.8 4.7c.4.9 1.7.9 2 0l1.8-4.7 5 1.2c.9.2 1.5-.8.9-1.5l-3.3-3.8 3.3-3.8c.6-.7 0-1.7-.9-1.5l-5 1.2-1.8-4.7z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Bee Swarm Removal</a></li>
+          <li><a href="services.html">Beehive Extraction</a></li>
+          <li><a href="services.html">Yellow Jacket Removal</a></li>
+          <li><a href="services.html">Wasp Nest Removal</a></li>
+          <li><a href="services.html">Mud Dauber Removal</a></li>
+          <li><a href="services.html">Bee-Proofing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#process">How It Works</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="index.html#discounts">Discounts</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:8776756102">(877) 675-6102</a></li>
+          <li><a href="mailto:info@BeeGreenRemoval.com">info@BeeGreenRemoval.com</a></li>
+          <li><a href="index.html#areas">Service Areas</a></li>
+          <li><a href="#contact-us">Free Estimate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>&copy; 2025 Bee Green Natural Bee Removal. All rights reserved.</span>
+      <span>Fully Permitted · Insured · Licensed in CA & TN</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT BTN -->
+<a href="tel:8776756102" class="float-btn">
+  <span class="float-dot"></span>
+  Call Now — Free Quote
+</a>
+
+<!-- FLYING BEE 🐝 -->
+<div class="flying-bee" aria-hidden="true">
+  <div class="bee-inner">
+    <svg viewBox="0 0 64 48" width="46" height="34" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="rgba(245,161,28,.45)" stroke-width="2" stroke-linecap="round">
+        <line x1="2" y1="22" x2="10" y2="22"/>
+        <line x1="0" y1="30" x2="7" y2="30"/>
+      </g>
+      <g class="bee-wings">
+        <ellipse class="wing" cx="30" cy="13" rx="11" ry="8" fill="rgba(255,255,255,.7)" stroke="rgba(0,0,0,.18)" stroke-width="1"/>
+        <ellipse class="wing" cx="42" cy="14" rx="9" ry="6" fill="rgba(255,255,255,.55)" stroke="rgba(0,0,0,.14)" stroke-width="1"/>
+      </g>
+      <path d="M16 26 l-8 0" stroke="#1a2b1f" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="34" cy="26" rx="18" ry="12" fill="#f5a11c"/>
+      <path d="M30 15.2 a18 12 0 0 0 0 21.6" stroke="#1a2b1f" stroke-width="4" fill="none"/>
+      <path d="M40 16.5 a16 11 0 0 0 0 19" stroke="#1a2b1f" stroke-width="4" fill="none"/>
+      <circle cx="50" cy="26" r="8" fill="#1a2b1f"/>
+      <circle cx="52" cy="24" r="2" fill="#fff"/>
+      <path d="M53 19 q4 -5 7 -4" stroke="#1a2b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <circle cx="60" cy="15" r="1.6" fill="#1a2b1f"/>
+    </svg>
+  </div>
+</div>
+
+<script>
+// ── Nav burger ──
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('mobileDrawer');
+burger.addEventListener('click', () => {
+  const open = drawer.classList.toggle('open');
+  burger.classList.toggle('is-open', open);
+  burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+function closeMob(){ drawer.classList.remove('open'); burger.classList.remove('is-open'); }
+
+// ── Dark mode (shared via localStorage with the other pages) ──
+const darkToggle = document.getElementById('darkToggle');
+if(localStorage.getItem('dark') === '1') document.body.classList.add('dark');
+darkToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('dark', document.body.classList.contains('dark') ? '1' : '0');
+});
+
+// ── Scroll reveal ──
+const obs = new IntersectionObserver(e => e.forEach(el => { if(el.isIntersecting) el.target.classList.add('in') }), {threshold:.1});
+document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+// ── Form submit ──
+function handleForm(e){
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.innerHTML = '&#10003; Request Sent &mdash; We\'ll Call You Shortly!';
+  btn.style.background = 'var(--green)';
+  btn.disabled = true;
+}
+</script>
+</body>
+</html>
